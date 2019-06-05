@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="styles/register.css" />
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script src="scripts/gen_validatorv4.js"></script>
+<script src="scripts/register.js"></script>
+</head>
+<body>
+<form id="signupForm" method="post" action="RegisterServlet">
+	<fieldset>
+		<legend>Validating a complete form</legend>
+		<p>
+			<label for="username">Username</label>
+			<input id="username" name="username" type="text" />			
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" />
+		</p>		
+		<p>
+			<label for="confirm_password">Confirm password</label>
+			<input id="confirm_password" name="confirm_password" type="password" />
+		</p>
+		<p>
+			<label for="firstname">Firstname</label>
+			<input id="firstname" name="firstname" type="text" />
+		</p>
+		<p>
+			<label for="lastname">Lastname</label>
+			<input id="lastname" name="lastname" type="text" />
+		</p>		
+		<p>
+			<input class="submit" type="submit" value="Submit">
+		</p>
+	</fieldset>
+</form>
+
+<div id='signupForm_errorloc'></div>
+</body>
+</html>
